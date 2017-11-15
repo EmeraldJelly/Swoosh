@@ -15,6 +15,7 @@
 		57B860311FBCF7EF009D1147 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57B8602F1FBCF7EF009D1147 /* LaunchScreen.storyboard */; };
 		57B8603C1FBCF7F0009D1147 /* SwooshTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B8603B1FBCF7F0009D1147 /* SwooshTests.swift */; };
 		57B860471FBCF7F0009D1147 /* SwooshUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B860461FBCF7F0009D1147 /* SwooshUITests.swift */; };
+		57B860561FBCFB87009D1147 /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B860551FBCFB87009D1147 /* BorderButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		57B860421FBCF7F0009D1147 /* SwooshUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwooshUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57B860461FBCF7F0009D1147 /* SwooshUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwooshUITests.swift; sourceTree = "<group>"; };
 		57B860481FBCF7F0009D1147 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57B860551FBCFB87009D1147 /* BorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		57B860221FBCF7EF009D1147 /* Swoosh */ = {
 			isa = PBXGroup;
 			children = (
+				57B860541FBCFB57009D1147 /* Views */,
 				57B860231FBCF7EF009D1147 /* AppDelegate.swift */,
 				57B860251FBCF7EF009D1147 /* ViewController.swift */,
 				57B860271FBCF7EF009D1147 /* Main.storyboard */,
@@ -126,6 +129,14 @@
 				57B860481FBCF7F0009D1147 /* Info.plist */,
 			);
 			path = SwooshUITests;
+			sourceTree = "<group>";
+		};
+		57B860541FBCFB57009D1147 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				57B860551FBCFB87009D1147 /* BorderButton.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +276,7 @@
 				57B860261FBCF7EF009D1147 /* ViewController.swift in Sources */,
 				57B8602C1FBCF7EF009D1147 /* Swoosh.xcdatamodeld in Sources */,
 				57B860241FBCF7EF009D1147 /* AppDelegate.swift in Sources */,
+				57B860561FBCFB87009D1147 /* BorderButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
