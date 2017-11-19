@@ -136,6 +136,9 @@
                                         <state key="normal" title="Mens">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onMensTapped:" destination="Gld-sp-HkT" eventType="touchUpInside" id="4SP-Mk-EC3"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oMO-2S-6RV" customClass="BorderButton" customModule="Swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="70" width="335" height="50"/>
@@ -147,6 +150,9 @@
                                         <state key="normal" title="Womens">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onWomensTapped:" destination="Gld-sp-HkT" eventType="touchUpInside" id="Kf9-wh-6iD"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ina-yI-L58" customClass="BorderButton" customModule="Swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="140" width="335" height="50"/>
@@ -158,10 +164,13 @@
                                         <state key="normal" title="Co-Ed">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onCoEdTapped:" destination="Gld-sp-HkT" eventType="touchUpInside" id="R1M-id-PL4"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oC1-ao-JGO" customClass="BorderButton" customModule="Swoosh" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oC1-ao-JGO" customClass="BorderButton" customModule="Swoosh" customModuleProvider="target">
                                 <rect key="frame" x="20" y="597" width="335" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.4023972603" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -198,6 +207,7 @@
                         <viewLayoutGuide key="safeArea" id="9uf-YZ-UEQ"/>
                     </view>
                     <connections>
+                        <outlet property="nextBtn" destination="oC1-ao-JGO" id="F8t-ji-oNE"/>
                         <segue destination="vkB-ZT-cuH" kind="show" identifier="leagueToSkillSegue" id="Fdp-jf-ckr"/>
                     </connections>
                 </viewController>
